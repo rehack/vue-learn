@@ -46,7 +46,7 @@ export default {
     },
     methods: {
         updateAge() {
-            this.age ++ // props数据是只读的，不允许被直接修改，页面能修改成功，但是会报错
+            this.age ++ // props数据是只读的，不允许被直接修改，页面能修改成功，但是会报错（如果改的是引用类型数据不会报错）
 
             this.myAge ++ // 通过中转数据进行修改，复制一份props数据到data中，然后修改data的数据
         }
