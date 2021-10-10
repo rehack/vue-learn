@@ -53,7 +53,16 @@ const mutations = {
 
 // 准备state ，用于存储共享数据的
 const state = {
-    sum: 0
+    sum: 0,
+    school: '北京大学',
+    subject: '前端'
+}
+
+// 准备getters 用于将state中的数据进行加工(state的计算属性)
+const getters = {
+    bigSum(state){
+        return state.sum*10
+    }
 }
 
 
@@ -75,5 +84,6 @@ export default store */
 export default new Vuex.Store({
     actions,
     mutations,
-    state
+    state,
+    getters
 })
