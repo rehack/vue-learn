@@ -1,7 +1,7 @@
 <template>
     <div class="menus">
+        <router-link class="menu" active-class="active" :to="{name: 'guanyu'}">About</router-link>
         <router-link class="menu" active-class="active" to="/home">Home</router-link>
-        <router-link class="menu" active-class="active" to="/about">About</router-link>
     </div>
 </template>
 
